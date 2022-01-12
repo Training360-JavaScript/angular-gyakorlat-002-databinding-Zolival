@@ -14,7 +14,11 @@ interface IPriceItem {
 })
 export class PricingPageComponent implements OnInit {
 
-  priceTable: IPriceItem[] = [];
+  priceTable: IPriceItem[] = [
+    {name: "free", price: 0, options:["10 tanuló", "2Gb tárhely", "Email támogatás", "Dokumentáció" ], btnText: "Ingyenes regisztráció"},
+    {name: "Pro", price: 15, options:["20 tanuló", "10Gb tárhely", "Kiemelt email támogatás", "Dokumentáció" ], btnText: "Kezdő lépések"},
+    {name: "Enterprice", price: 29, options:["100 tanuló", "100Gb tárhely", "Telefopnos és email támogatás", "Dokumentáció" ], btnText: "Kontact"}
+  ];
 
   constructor() { }
 
